@@ -15,7 +15,9 @@ table {
 .info {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
+    padding-top: 70px;
     border-bottom: 5px solid lightyellow;
 }
 
@@ -32,7 +34,6 @@ table {
 }
 
 img {
-    padding-top: 70px;
     width: 30%;
 }
 
@@ -67,4 +68,33 @@ header {
 
 a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 900px) { 
+    img{
+        width: 70%;
+    }
+
+    .fixed {
+        height: 8%;
+    }
+
+    .list {
+        font-size: 40px;
+        width: 530px;
+    }
+    .vertical {
+        right: 0;
+    }
+
+    .info {
+        min-width: 530px;
+        align-content: center;
+        text-align: center;
+    }
+    table {
+        height: 300px;
+        width: 530px;
+        font-size: 25px;
+    }
 }
