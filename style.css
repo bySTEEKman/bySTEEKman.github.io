@@ -3,7 +3,42 @@ body {
     margin: 0;
     background-color: peachpuff;
 }
+
+aside {
+    display: inline-block;
+    padding-top: 300px;
+    width: 100px;
+    position: fixed;
+    border-right: 5px solid lightyellow;
+    height: 100%;
+}
+
+main {
+    display: inline-block;
+    padding-left: 105px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10%;
+    height: 300px;
+}
+
+.skills div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skills div p {
+    padding: 0 30px;
+    text-align: justify;
+}
+
 table {
+    width: 100%;
     font-size: 30px;
     height: 200px;
     font-family: 'Courier New', Courier, monospace;
@@ -13,15 +48,18 @@ table {
 }
 
 .info {
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
+    justify-items: center;
     padding-top: 70px;
     border-bottom: 5px solid lightyellow;
 }
 
 .list {
+    padding-left: 20px;
     position: relative;
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
@@ -39,8 +77,8 @@ img {
 
 .float {
     padding: 0;
-    width: 5%;
-    float: initial;
+    width: 100px;
+    float: left;
 }
 
 header {
@@ -53,7 +91,7 @@ header {
     display: flex;
     justify-content: space-around;
     position: fixed;
-    height: 10%;
+    z-index: 1;
     width: 100%;
     background-color: lightsalmon;
 }
@@ -68,33 +106,4 @@ header {
 
 a {
     text-decoration: none;
-}
-
-@media screen and (max-width: 900px) { 
-    img{
-        width: 70%;
-    }
-
-    .fixed {
-        height: 8%;
-    }
-
-    .list {
-        font-size: 40px;
-        width: 530px;
-    }
-    .vertical {
-        right: 0;
-    }
-
-    .info {
-        min-width: 530px;
-        align-content: center;
-        text-align: center;
-    }
-    table {
-        height: 300px;
-        width: 530px;
-        font-size: 25px;
-    }
 }
